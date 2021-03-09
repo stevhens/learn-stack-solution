@@ -17,17 +17,19 @@ struct BellWidgetSmall: View {
             Image("bg")
                 .resizable()
             
-            Image("circle-1")
-                .resizable()
-                .scaleEffect(0.7)
-            
-            Image("circle-2")
-                .resizable()
-                .scaleEffect(0.6)
-            
-            Image("bell")
-                .resizable()
-                .scaleEffect(0.4)
+            ZStack {
+                Image("circle-1")
+                    .resizable()
+                    .scaleEffect(0.7)
+                
+                Image("circle-2")
+                    .resizable()
+                    .scaleEffect(0.6)
+                
+                Image("bell")
+                    .resizable()
+                    .scaleEffect(0.4)
+            }
             
         }
         
